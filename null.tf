@@ -25,7 +25,8 @@ resource "null_resource"  "commands" {
     inline = [
         "sudo su -",
         "sudo yum install curl -y ",
-        "sudo curl https://assets.nagios.com/downloads/nagiosxi/install.sh | sh",
+        "sudo curl https://assets.nagios.com/downloads/nagiosxi/install.sh |sudo sh",
+        
         
         
         ]
