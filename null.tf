@@ -23,8 +23,8 @@ resource "null_resource"  "commands" {
         private_key = "${file("~/.ssh/id_rsa")}"
     }
     inline = [
-        "sudo su -",
-        "sudo yum install curl -y ",
+        #"sudo su -",
+        #"sudo yum install curl -y ",
         "sudo curl https://assets.nagios.com/downloads/nagiosxi/install.sh |sudo sh",
         
         
